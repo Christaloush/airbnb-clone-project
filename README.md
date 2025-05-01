@@ -27,12 +27,19 @@ Develops test plans and automated test scripts to validate backend processes, id
 # Technology Stack
 
 Django: A high-level Python web framework used for building the RESTful API.
+
 Django REST Framework: Provides tools for creating and managing RESTful APIs.
+
 PostgreSQL: A powerful relational database used for data storage.
+
 GraphQL: Allows for flexible and efficient querying of data.
+
 Celery: For handling asynchronous tasks such as sending notifications or processing payments.
+
 Redis: Used for caching and session management.
+
 Docker: Containerization tool for consistent development and deployment environments.
+
 CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
 
 
@@ -100,7 +107,7 @@ status: e.g., Paid, Pending, Failed
 
 payment_date: Timestamp of payment
 
-# Entity Relationships
+Entity Relationships
 A User can have multiple Properties (if they're a host).
 
 A Property can have many Bookings and Reviews.
@@ -184,6 +191,28 @@ A Review is written by one User and relates to one Property.
 
 A Payment is tied to a single Booking.
 
+# Feature Breakdown
+User Management
+Users can sign up, log in, update profiles, and manage account details. Authentication and role-based access (guest or host) ensure a secure and personalized experience.
+
+Property Management
+Hosts can list new properties, add photos, set pricing, and edit or remove listings. This allows users to showcase available accommodations for booking.
+
+Booking System
+Guests can browse properties, select dates, and make reservations. The system handles availability checks and ensures no double bookings.
+
+Review System
+Guests can leave ratings and written feedback after their stay. Reviews help future users make informed booking decisions and improve trust in the platform.
+
+Payment Integration
+Secure payments are processed through third-party gateways like Stripe. It ensures bookings are confirmed only after successful transactions.
+
+Search and Filtering
+Users can search properties by location, date, price, and amenities. This feature helps users quickly find listings that match their preferences.
+
+Notifications System
+Email or in-app notifications inform users of booking confirmations, cancellations, or new messages. It enhances communication and engagement.
+
 # 🔐 API Security
 To protect sensitive data and ensure a secure user experience, this project implements the following API security measures:
 
@@ -222,5 +251,7 @@ CI/CD helps us maintain high code quality, deploy faster, and catch issues early
 # 📋 Manual Review
 
 Database Design 
-API Security 
+
+API Security
+
 CI/CD Pipeline 

@@ -9,7 +9,7 @@ Review System: Allow users to leave reviews and ratings for properties.
 Data Optimization: Ensure efficient data retrieval and storage through database optimizations.
 
 
-Team roles
+# Team Roles
 
 Backend Developer:
 Designs and builds the server-side infrastructure that powers the application, including the creation of RESTful APIs, integration with databases, and ensuring efficient data flow and secure processing of user requests.
@@ -24,7 +24,7 @@ QA (Quality Assurance) Engineer:
 Develops test plans and automated test scripts to validate backend processes, identify bugs early, and confirm that all backend systems behave as expected under different scenarios and loads.
 
 
-Technology Stack
+# Technology Stack
 
 Django: A high-level Python web framework used for building the RESTful API.
 Django REST Framework: Provides tools for creating and managing RESTful APIs.
@@ -36,7 +36,7 @@ Docker: Containerization tool for consistent development and deployment environm
 CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
 
 
-Database Design
+# Database Design
 
 
 Entities & Key Fields
@@ -100,7 +100,7 @@ status: e.g., Paid, Pending, Failed
 
 payment_date: Timestamp of payment
 
-Entity Relationships
+# Entity Relationships
 A User can have multiple Properties (if they're a host).
 
 A Property can have many Bookings and Reviews.
@@ -184,7 +184,7 @@ A Review is written by one User and relates to one Property.
 
 A Payment is tied to a single Booking.
 
-🔐 API Security
+# 🔐 API Security
 To protect sensitive data and ensure a secure user experience, this project implements the following API security measures:
 
 Authentication: Ensures only verified users can access the system using methods like JWT tokens or session-based login.
@@ -202,7 +202,7 @@ Why it's crucial: Ensures data integrity and blocks malicious inputs.
 Secure Payment Integration: Ensures payment endpoints are protected and use secure third-party gateways like Stripe.
 Why it's crucial: Protects financial information and avoids fraudulent transactions.
 
-⚙️ CI/CD Pipeline
+# ⚙️ CI/CD Pipeline
 CI/CD (Continuous Integration and Continuous Deployment) automates the development lifecycle—from testing to deployment—ensuring faster, safer code delivery.
 
 Continuous Integration: Automatically runs tests on every code push to catch bugs early.
@@ -219,7 +219,7 @@ Heroku / AWS / Render: Could be used for hosting production services.
 
 CI/CD helps us maintain high code quality, deploy faster, and catch issues early in development.
 
-📋 Manual Review
+# 📋 Manual Review
 
 Database Design 
 API Security 
